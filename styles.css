@@ -1,0 +1,182 @@
+body, html {
+    height: 100%;
+    font-family: 'Avenir LT Std',sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fffc;
+}
+.title {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
+    text-shadow: 2px 1px 2px #000;
+}
+
+nav.top-bar {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 4px 4px #0003
+}
+
+nav.top-bar ul {
+    list-style: none;
+}
+
+nav.top-bar li {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fffc;
+    display: inline-block;
+    padding: 10px;
+    user-select: none;
+}
+
+nav.top-bar a:hover,
+nav.top-bar li:hover{
+    color: #fffe;
+    cursor: pointer;
+}
+
+nav.top-bar a:active,
+nav.top-bar li:active {
+    color: #fff;
+}
+
+nav.top-bar .pull-down {
+    text-align: left;
+    padding-left: 2px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+nav.top-bar .pull-down li {
+    color: #333c;
+    display: block;
+}
+
+nav.top-bar .pull-down li:hover {
+    color: #333e;
+    text-decoration: underline;
+}
+
+nav.top-bar .pull-down li:active {
+    color: #333f;
+}
+
+nav.top-bar li:hover .pull-down {
+    display: block;
+}
+
+.parallax {
+    width: auto;
+    vertical-align: middle;
+    margin: 100px 100px 0px 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+}
+
+    .parallax .overlay{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0);
+    }
+
+        .parallax .overlay:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+    .parallax .title{
+        text-align: center;
+        display: inline-block;
+        font-size: 100px;
+        text-shadow: 5px 5px 2px #000;
+        color: white;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .parallax #cg-desc,
+    .parallax #gd-desc {
+        margin: 40px;
+        text-align:center;
+        font-size: 30px;
+        color: #FFFB;
+    }
+
+        .parallax #cg-desc:hover,
+        .parallax #gd-desc:hover {
+            color: #FFFE;
+        }
+
+
+    .parallax:hover {
+        cursor: pointer;
+        margin: 100px 50px 50px 50px;
+        -webkit-transition: margin 0.25s;
+        -moz-transition: margin 0.25s;
+    }
+
+.project-tile {
+    margin: 30px 25px;
+    top: 50px;
+    background-color: rgba(255,255,255,0.7);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+    .project-tile:hover {
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    .project-tile:active {
+        background-color: rgba(255,255,255,1.0);
+    }
+
+    .project-tile .info-wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .project-tile img {
+        width: 70%;
+        padding: 10%;
+    }
+
+
+    .project-tile .project-information {
+        margin: 7% 0 0 -10%;
+        text-align: left;
+        font-size: 22px;
+        padding: 10px;
+        color: black;
+    }
+
+        .project-tile .project-information .project-title {
+            font-size: 35px;
+            font-weight: 900;
+            text-shadow: 1px 1px 1px #F20;
+        }
+    
+@keyframes zoom {
+    from {
+        margin: 100px 100px 0px 100px;
+    }
+
+    to {
+        margin: 100px 50px 0px 50px;
+    }
+}
