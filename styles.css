@@ -153,10 +153,10 @@ nav.top-bar li:hover .pull-down {
 
     .project-tile img.icons {
         display:inline;
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
         margin: 0px 10px;
-        padding: 0;
+        padding: 0px;
     }
 
     .project-tile .project-information {
